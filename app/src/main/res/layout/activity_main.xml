@@ -26,4 +26,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="51dp"
+        android:layout_height="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/putBtn"
+        tools:layout_editor_absoluteY="553dp"
+        tools:text="show" />
+
+    <Button
+        android:id="@+id/putBtn"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:text="Put"
+        app:layout_constraintEnd_toStartOf="@+id/showBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="553dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
