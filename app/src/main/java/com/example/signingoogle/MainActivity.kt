@@ -67,6 +67,9 @@ class MainActivity : AppCompatActivity() {
                 signOut()
             }
         }
+        if(account==null){
+            signOut()
+        }
 
 
         setContentView(binding.root)
@@ -74,7 +77,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun signOut() {
         client.signOut().addOnCompleteListener {
-            finish()
             startActivity(Intent(this,LoginActivity::class.java))
         }
     }
